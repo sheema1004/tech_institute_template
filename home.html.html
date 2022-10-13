@@ -1,0 +1,2354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- font awsome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <title>BOOTSTRAP ACHIEVER'S IT</title>
+    <style>
+        #carousel-h1 {
+            padding-bottom: 50px;
+        }
+
+        #carousel-butn {
+            margin-bottom: 50px;
+            margin-left: 400px;
+        }
+
+        #gradient1 {
+            height: 100px;
+            background-image: linear-gradient(to bottom right, rgb(35, 108, 204), white);
+        }
+
+        .card5h5 {
+            padding-left: 80px;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        #gradient2 {
+            height: 100px;
+            background-image: linear-gradient(to right, rgb(22, 22, 109), white);
+        }
+
+        .fa-poll {
+            background-color: rgb(22, 22, 109);
+            color: white;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+
+        #gradient3 {
+            height: 100px;
+            background-image: linear-gradient(to bottom right, rgb(221, 118, 118), white);
+        }
+
+        #gradient4 { 
+            height: 100px;
+            background-image: linear-gradient(to right, rgb(245, 86, 165), rgb(255, 194, 80));
+        }
+
+        .fa-globe,
+        .fa-react,
+        .fa-bity,
+        .fa-uikit,
+        .fa-vuejs,
+        .fa-wordpress {
+            color: white;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        #gradient5 {
+            height: 100px;
+            background-image: linear-gradient(to bottom right, rgb(162, 235, 162), aqua);
+        }
+
+        #gradient6 {
+            height: 100px;
+            background-image: linear-gradient(to right, red, white);
+        }
+
+        #gradient7 {
+            height: 100px;
+            background-image: linear-gradient(to right bottom, rgb(70, 151, 70), yellow);
+        }
+
+        #gradient8 {
+            height: 100px;
+            background-image: linear-gradient(to right bottom, orange, red);
+        }
+
+        #gradient8 i {
+            color: white;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        #card1,
+        #card2,
+        #card3,
+        #card4,
+        #card5,
+        #card6,
+        #card7,
+        #card8,
+        #card9,
+        #card10,
+        #card11,
+        #card12,
+        #card13,
+        #card14,
+        #card15 {
+            position: relative;
+            width: 100%;
+        }
+
+        .card-body {
+            position: relative;
+        }
+
+        .card-footer {
+            position: relative;
+            bottom: 0;
+        }
+
+        .card .content1 {
+            position: absolute;
+            bottom: 0;
+            overflow: scroll;
+            width: 100%;
+            height: 0px;
+            background-color: black;
+            color: white;
+            transition: 0.5s ease-in-out;
+        }
+
+        .card:hover .content1 {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+        }
+
+        .content1 p {
+            font-size: 15px;
+        }
+
+        .content1 ul li a {
+            color: white;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .content1 ul li a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        .card .content1::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .card .content1::-webkit-scrollbar-thumb {
+            background: linear-gradient(transparent, red);
+            border-radius: 10px;
+        }
+
+        .card .content1::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(transparent, yellow);
+        }
+
+        #gradient9 {
+            height: 100px;
+            background-image: linear-gradient(to bottom right, hotpink, white);
+        }
+
+        #gradient10 {
+            height: 100px;
+            background-image: linear-gradient(to left bottom, rgb(230, 20, 20), white);
+        }
+
+        #gradient11 {
+            height: 100px;
+            background-image: linear-gradient(to left bottom, blue, aqua);
+        }
+
+        #gradient12 {
+            height: 100px;
+            background-image: linear-gradient(to bottom right, rgb(156, 252, 156), yellow);
+        }
+
+        #gradient13 {
+            height: 100px;
+            background-image: linear-gradient(to bottom right, blue, white);
+        }
+
+        #gradient14 {
+            height: 100px;
+            background-image: linear-gradient(to bottom right, rgb(255, 165, 0), white);
+        }
+
+        #gradient15 {
+            height: 100px;
+            background-image: linear-gradient(to bottom right, aqua, white);
+        }
+
+        #gradient16 {
+            height: 100px;
+            background-image: linear-gradient(to top right, yellow, white);
+        }
+
+        #gradient17 {
+            height: 100px;
+            background-image: linear-gradient(to bottom right, rgb(163, 228, 163), white);
+        }
+
+        .cardh1 {
+            position: absolute;
+            left: 40px;
+            top: 15px;
+            border: hidden;
+            border-radius: 100px;
+            background-color: floralwhite;
+            padding: 10px 20px;
+            color: blue;
+        }
+
+        .cardh3 {
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            line-height: 100px;
+            padding-left: 30px;
+            color: black;
+        }
+
+        .footer {
+            border: 1px solid black;
+            height: 400px;
+            width: 100%;
+            background-color: black;
+            margin-top: 70px;
+        }
+
+        .footer p {
+            margin: 0px;
+            color: white;
+            display: inline-flex;
+            opacity: 0.5;
+            position: relative;
+            left: 40%;
+            bottom: 0;
+        }
+
+        .footer .fa-heart {
+            color: red;
+            position: relative;
+            left: 40%;
+            bottom: 0;
+        }
+
+        .footer .sub_footer1 {
+            display: flex;
+            padding-top: 100px;
+        }
+
+        .sub_footer1 img {
+            padding-left: 100PX;
+        }
+
+        .sub_footer1 .footerul1 ul {
+            display: flex;
+        }
+
+        .sub_footer1 li {
+            list-style: none;
+            font-size: 18px;
+        }
+
+        .sub_footer1 a {
+            color: white;
+            opacity: 0.5;
+            text-decoration: none;
+        }
+
+        .sub_footer1 li a:hover {
+            color: white;
+            opacity: 1;
+        }
+
+        .sub_footer2 h6 {
+            color: white;
+            margin-left: 130px;
+            margin-top: 60px;
+            font-size: 15px;
+        }
+
+        .sub_footer3 {
+            display: flex;
+        }
+
+        .search_email {
+            padding-left: 130px;
+        }
+
+        .search_email input {
+            border-bottom: 1px solid white;
+            outline: none;
+            font-size: 17px;
+            width: 250px;
+            background-color: black;
+            color: white;
+        }
+
+        .search_email input ::-webkit-input-placeholder {
+            color: white;
+            opacity: 0.5;
+        }
+
+        .search_email button:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .footer_icons ul {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+        }
+
+        .footer_icons li {
+            display: inline-flex;
+            font-size: 30px;
+        }
+
+        .footer_icons li a {
+            color: white;
+        }
+
+        .fa-facebook:hover {
+
+            background-color: white;
+            color: blue;
+        }
+
+        .fa-instagram:hover {
+            color: hotpink;
+        }
+
+        .fa-twitter-square:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        .fa-pinterest:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .fa-youtube-square:hover {
+            background-color: red;
+            color: white;
+        }
+
+        /* XTRA SMALL DEVICE */
+        @media(max-width:575.98px) {
+            #carousel-h1 {
+                font-size: 10px;
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+            }
+
+            #carousel-butn {
+                height: 20px;
+                font-size: 7px;
+                margin-bottom: 0px;
+                margin-left: 50px;
+                padding-bottom: 0px;
+            }
+
+            .cardh1 {
+                position: absolute;
+                left: 10px;
+                top: 25px;
+                border: hidden;
+                border-radius: 100px;
+                background-color: floralwhite;
+                padding: 10px 20px;
+                color: blue;
+            }
+
+            .cardh3 {
+                display: flex;
+                justify-content: center;
+                height: 100px;
+                line-height: 100px;
+                padding-left: 30px;
+                color: black;
+            }
+
+            #discover-h3 {
+                text-align: center;
+            }
+
+            .footer {
+                border: 1px solid black;
+                height: 400px;
+                width: 100%;
+                background-color: black;
+                margin-top: 50px;
+            }
+
+            .footer p {
+                margin: 0px;
+                color: white;
+                opacity: 0.5;
+                position: relative;
+                left: 20%;
+                top: 0;
+                font-size: 12px;
+            }
+
+            .footer .fa-heart {
+                color: red;
+                position: relative;
+                left: 80px;
+                bottom: 0;
+                font-size: 10px;
+            }
+
+            .footer .sub_footer1 {
+                display: block;
+                padding-top: 0px;
+            }
+
+            .sub_footer1 img {
+                padding-left: 50PX;
+                width: 300px;
+                margin-top: 5px;
+            }
+
+            .sub_footer1 .footerul1 ul {
+                display: flex;
+                padding-left: 30px;
+                margin-top: 10px;
+            }
+
+            .sub_footer1 .footerul2 ul {
+                display: block;
+                padding-left: 30px;
+                padding-top: 10px;
+            }
+
+            .sub_footer1 .footerul3 ul {
+                display: block;
+                padding-left: 30px;
+            }
+
+            .sub_footer1 li {
+                list-style: none;
+                font-size: 14px;
+            }
+
+            .sub_footer1 a {
+                color: white;
+                opacity: 0.5;
+                text-decoration: none;
+            }
+
+            .sub_footer1 li a:hover {
+                color: white;
+                opacity: 1;
+            }
+
+            .sub_footer2 h6 {
+                color: white;
+                padding-left: 120px;
+                margin-top: 0px;
+                font-size: 12px;
+                margin-bottom: 5px;
+                margin-left: 0px;
+            }
+
+            .sub_footer3 {
+                display: block;
+            }
+
+            .search_email {
+                padding-left: 70px;
+                margin-bottom: 0px;
+                display: flex;
+            }
+
+            .search_email input {
+                border-bottom: 1px solid white;
+                outline: none;
+                font-size: 17px;
+                width: 150px;
+                background-color: black;
+                color: white;
+            }
+
+            .search_email input ::-webkit-input-placeholder {
+                color: white;
+                opacity: 0.5;
+            }
+
+            .search_email button:hover {
+                background-color: red;
+                color: white;
+            }
+
+            .footer_icons ul {
+                margin-top: 0px;
+                padding-left: 70px;
+                display: flex;
+            }
+
+            .footer_icons li {
+                font-size: 25px;
+                padding-left: 10px;
+            }
+
+            .footer_icons li a {
+                color: white;
+            }
+
+            .fa-facebook:hover {
+                background-color: white;
+                color: blue;
+            }
+
+            .fa-instagram:hover {
+                color: hotpink;
+            }
+
+            .fa-twitter-square:hover {
+                background-color: blue;
+                color: white;
+            }
+
+            .fa-pinterest:hover {
+                background-color: red;
+                color: white;
+            }
+
+            .fa-youtube-square:hover {
+                background-color: red;
+                color: white;
+            }
+        }
+
+        /* SMALL DEVICES */
+        @media(min-width:576px) and (max-width:767.98PX) {
+            #carousel-h1 {
+                font-size: 20px;
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+            }
+
+            #carousel-butn {
+                height: 30px;
+                font-size: 10px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+                margin-left: 150px;
+            }
+
+            .cardh1 {
+                position: absolute;
+                left: 50px;
+                top: 20px;
+                border: hidden;
+                border-radius: 100px;
+                background-color: floralwhite;
+                padding: 10px 20px;
+                color: blue;
+            }
+
+            .cardh3 {
+                display: flex;
+                justify-content: center;
+                height: 100px;
+                line-height: 100px;
+                padding-left: 30px;
+                color: black;
+            }
+
+            #discover-h3 {
+                text-align: center;
+            }
+
+            .footer {
+                border: 1px solid black;
+                height: 400px;
+                width: 100%;
+                background-color: black;
+                margin-top: 50px;
+            }
+
+            .footer p {
+                margin: 0px;
+                color: white;
+                display: inline-flex;
+                opacity: 0.5;
+                position: relative;
+                left: 30%;
+                bottom: 0;
+            }
+
+            .footer .fa-heart {
+                color: red;
+                position: relative;
+                left: 200px;
+                bottom: 0;
+            }
+
+            .footer .sub_footer1 {
+                display: flex;
+                padding-top: 50px;
+            }
+
+            .sub_footer1 img {
+                padding-left: 20PX;
+                width: 200px;
+                margin-top: 30px;
+            }
+
+            .sub_footer1 .footerul1 ul {
+                display: block;
+                padding-left: 40px;
+                margin-top: 50px;
+            }
+
+            .sub_footer1 ul {
+                padding-left: 0px;
+                margin-top: 50px;
+            }
+
+
+            .sub_footer1 li {
+                list-style: none;
+                font-size: 12px;
+            }
+
+            .sub_footer1 a {
+                color: white;
+                opacity: 0.5;
+                text-decoration: none;
+            }
+
+            .sub_footer1 li a:hover {
+                color: white;
+                opacity: 1;
+            }
+
+            .sub_footer2 h6 {
+                color: white;
+                margin-left: 100px;
+                margin-top: 40px;
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+
+            .sub_footer3 {
+                display: flex;
+            }
+
+            .search_email {
+                padding-left: 50px;
+                margin-bottom: 30px;
+            }
+
+            .search_email input {
+                border-bottom: 1px solid white;
+                outline: none;
+                font-size: 17px;
+                width: 250px;
+                background-color: black;
+                color: white;
+            }
+
+            .search_email input ::-webkit-input-placeholder {
+                color: white;
+                opacity: 0.5;
+            }
+
+            .search_email button:hover {
+                background-color: red;
+                color: white;
+            }
+
+            .footer_icons ul {
+                margin: 0px;
+                padding-left: 20px;
+                display: flex;
+            }
+
+            .footer_icons li {
+                display: inline-flex;
+                font-size: 25px;
+                padding-left: 10px;
+            }
+
+            .footer_icons li a {
+                color: white;
+            }
+
+            .fa-facebook:hover {
+                background-color: white;
+                color: blue;
+            }
+
+            .fa-instagram:hover {
+                color: hotpink;
+            }
+
+            .fa-twitter-square:hover {
+                background-color: blue;
+                color: white;
+            }
+
+            .fa-pinterest:hover {
+                background-color: red;
+                color: white;
+            }
+
+            .fa-youtube-square:hover {
+                background-color: red;
+                color: white;
+            }
+        }
+
+        /* MEDIUM DEVICES */
+        @media(min-width:768px) and (max-width:991.98px) {
+            #carousel-h1 {
+                font-size: 25px;
+                padding-bottom: 25px;
+            }
+
+            #carousel-butn {
+                margin-bottom: 0px;
+                margin-left: 100px;
+            }
+
+            .cardh1 {
+                position: absolute;
+                left: 0px;
+                top: 25px;
+                border: hidden;
+                border-radius: 100px;
+                background-color: floralwhite;
+                padding: 10px 20px;
+                color: blue;
+                font-size: 25px;
+            }
+
+            .cardh3 {
+                display: flex;
+                justify-content: center;
+                height: 100px;
+                line-height: 100px;
+                padding-left: 50px;
+                color: black;
+                font-size: 20px;
+            }
+
+            #discover-h3 {
+                text-align: center;
+            }
+
+            .footer {
+                border: 1px solid black;
+                height: 400px;
+                width: 100%;
+                background-color: black;
+                margin-top: 50px;
+            }
+
+            .footer p {
+                margin: 0px;
+                color: white;
+                display: inline-flex;
+                opacity: 0.5;
+                position: relative;
+                left: 35%;
+                bottom: 0;
+            }
+
+            .footer .fa-heart {
+                color: red;
+                position: relative;
+                left: 270px;
+                bottom: 0;
+            }
+
+            .footer .sub_footer1 {
+                display: flex;
+                padding-top: 50px;
+            }
+
+            .sub_footer1 img {
+                padding-left: 20PX;
+                width: 200px;
+                padding-top: 0px;
+                margin-top: 0px;
+            }
+
+            .sub_footer1 .footerul1 ul {
+                display: block;
+            }
+
+            .sub_footer1 li {
+                list-style: none;
+                font-size: 15px;
+            }
+
+            .sub_footer1 a {
+                color: white;
+                opacity: 0.5;
+                text-decoration: none;
+            }
+
+            .sub_footer1 li a:hover {
+                color: white;
+                opacity: 1;
+            }
+
+            .sub_footer2 h6 {
+                color: white;
+                margin-left: 100px;
+                margin-top: 70px;
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+
+            .sub_footer3 {
+                display: flex;
+            }
+
+            .search_email {
+                padding-left: 50px;
+                margin-bottom: 30px;
+            }
+
+            .search_email input {
+                border-bottom: 1px solid white;
+                outline: none;
+                font-size: 17px;
+                width: 250px;
+                background-color: black;
+                color: white;
+            }
+
+            .search_email input ::-webkit-input-placeholder {
+                color: white;
+                opacity: 0.5;
+            }
+
+            .search_email button:hover {
+                background-color: red;
+                color: white;
+            }
+
+            .footer_icons ul {
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+            }
+
+            .footer_icons li {
+                display: inline-flex;
+                font-size: 30px;
+            }
+
+            .footer_icons li a {
+                color: white;
+            }
+
+            .fa-facebook:hover {
+                background-color: white;
+                color: blue;
+            }
+
+            .fa-instagram:hover {
+                color: hotpink;
+            }
+
+            .fa-twitter-square:hover {
+                background-color: blue;
+                color: white;
+            }
+
+            .fa-pinterest:hover {
+                background-color: red;
+                color: white;
+            }
+
+            .fa-youtube-square:hover {
+                background-color: red;
+                color: white;
+            }
+        }
+
+        /* LARGE DEVICES */
+        @media(min-width:992px) and (max-width:1199.98px) {
+            #carousel-h1 {
+                font-size: 30px;
+                padding-bottom: 30px;
+            }
+
+            #carousel-butn {
+                margin-bottom: 20px;
+            }
+
+            .cardh1 {
+                position: absolute;
+                left: 25px;
+                top: 20px;
+                border: hidden;
+                border-radius: 100px;
+                background-color: floralwhite;
+                padding: 10px 20px;
+                color: blue;
+                font-size: 30px;
+            }
+
+            .cardh3 {
+                display: flex;
+                justify-content: center;
+                height: 100px;
+                line-height: 100px;
+                padding-left: 80px;
+                color: black;
+                font-size: 25px;
+            }
+
+            #discover-h3 {
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- NAVIGATION BAR STARTS HERE -->
+    <nav class="navbar navbar-expand-xl  h6 mb-0 bg-dark navbar-dark">
+
+        <!-- BRAND LOGO STARTS -->
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <img src="https://www.achieversit.com/assets/images/logo-white.png" alt="logo">
+            </a>
+            <!--BRAND LOGO ENDS HERE -->
+
+            <!-- TOGGLE BUTTON STARTS -->
+            <button class="navbar-toggler toggler-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <!-- TOGGLE BUTTON ENDS HERE -->
+
+            <!--NAV MENU LINKS STARTS  -->
+            <div class=" collapse  navbar-collapse d-xl-inline-flex justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-3">
+                        <a class="nav-link active " style="color:white;" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <!-- DROP DOWN LINK  -->
+
+                    <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle link-light" href="#" style="color:white;"
+                            id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            All Courses
+                        </a>
+
+                        <!-- SUB MENU FOR DROPDOWN LINK -->
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item pt-3" href="#">Front End Developer</a></li>
+                            <li><a class="dropdown-item pt-3" href="#">Full Stack Courses</a></li>
+                            <li><a class="dropdown-item pt-3" href="#">Mobile Application Development</a></li>
+                            <li><a class="dropdown-item pt-3" href="#">Cloud Computing</a></li>
+                            <li><a class="dropdown-item pt-3" href="#">Digital Marketing Courses</a></li>
+                            <li><a class="dropdown-item pt-3" href="#">Data Science</a></li>
+                            <li><a class="dropdown-item pt-3" href="#">Artificial Intelligence</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- MENU LINKS STARTS AGAIN HERE -->
+
+                    <li class="nav-item px-3">
+                        <a class="nav-link" style="color: white;" href="#">Corperate Training</a>
+                    </li>
+
+                    <li class="nav-item px-3">
+                        <a class="nav-link" style="color: white;" href="#">Placements</a>
+                    </li>
+
+                    <li class="nav-item px-3">
+                        <a class="nav-link" style="color: white;" href="#">Internship</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" style="color:white" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" style="color:white" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- MENU LINKS ENDS HERE -->
+        </div>
+    </nav>
+    <!-- NAVIGATION BAR ENDS HERE -->
+
+    <!-- HERO IMAGE -->
+    <div class="carousel-inner ">
+        <div class="carousel-item active ">
+            <img src="https://www.achieversit.com/assets/images/angular_training.jpg" class="img-fluid d-block w-100"
+                alt="image1" height="400px" id="carousel-image">
+            <div class="carousel-caption">
+                <h1 class="text-end " id="carousel-h1">ANGULAR DEVELOPMENT COURSE</h1>
+                <a class="btn btn-danger rounded-0" href="https://www.besanttechnologies.com/" target="_blank"
+                    id="carousel-butn">EXPLORE
+                    COURSE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- GRID LAYOUT STARTS HERE -->
+
+    <div class="container">
+        <!-- HEADING TAG 1  -->
+        <p class="h3 d-flex justify-content-center mt-5 pt-5">TRENDING COURSES</p>
+        <hr>
+
+        <!--  TRENDING COURSES GRID CARDS STARTS HERE -->
+        <div
+            class="row row-cols-xs-1  row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 row-cols-xxl-4 g-5 m-0 mb-5 ">
+            <!-- CARD 1 -->
+            <div class="col h-100">
+                <div class="card h-100 shadow" id="card1">
+                    <img src="https://www.pngkey.com/png/detail/717-7176513_angular-js-vector-logo.png"
+                        class="card-img-top" alt="angular logo" height="100px">
+                    <div class="card-body">
+                        <h5 class="card-title">Angular Development <br> Course</h5>
+                        <div class="col">
+                            <P class="row-3 text-truncate ">Angular is popular for making dynamic applications and its
+                                information official
+                                and reliance infusion includes altogether lessen the measure of code that should be
+                                composed.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer ">
+                        <small class="text h6"><i>Reviews </i></small> <br>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i> <b> 5.0(257)</b>
+                    </div>
+                    <div class="content1">
+                        <p><i>Next Batch</i></p>
+                        <h5>In 14 Days-1st DEC </h5>
+                        <p><i>What Will I Learn ?</i></p>
+                        <ul>
+                            <li>
+                                <a href="#">Introduction to Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Understanding Angular Versions</a>
+                            </li>
+                            <li>
+                                <a href="#">Typescript & ES6</a>
+                            </li>
+                            <li>
+                                <a href="#">Power Odd Types</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore Functions</a>
+                            </li>
+                            <li>
+                                <a href="#">Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Interfaces</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Modules,Decorators.
+                                </a>
+                            </li>
+                            <a type="button" href="#" class="btn  btn-outline-danger btn-light ">VIEW DETAILS</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col h-100">
+                <div class="card h-100 shadow" id="card2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPTDQQVleJINiTPc-BFo33TpNQdoVAfA1u-7L5HDc5cNVFXbBZ-6IoAVB9pdPRcwPdOA&usqp=CAU"
+                        class=" card-img-top" alt="react logo" height="100px">
+                    <div class="card-body">
+                        <h5 class="card-title"> React Development <br> Course</h5>
+                        <div class="col">
+                            <P class="row-3 text-truncate ">
+                                We taught you in detailed explanations of what React JS is, why we use React
+                                JS, What is JSX, Unidirectional data flow, React Components, React Hooks and React
+                                Router,
+                                etc.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text h6"><i>Reviews</i></small> <br>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i> <b> 5.0(292)</b>
+                    </div>
+                    <div class="content1">
+                        <p><i>Next Batch</i></p>
+                        <h5>In 14 Days-1st DEC </h5>
+                        <p><i>What Will I Learn ?</i></p>
+                        <ul>
+                            <li>
+                                <a href="#">Introduction to Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Understanding Angular Versions</a>
+                            </li>
+                            <li>
+                                <a href="#">Typescript & ES6</a>
+                            </li>
+                            <li>
+                                <a href="#">Power Odd Types</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore Functions</a>
+                            </li>
+                            <li>
+                                <a href="#">Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Interfaces</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Modules,Decorators.
+                                </a>
+                            </li>
+                            <a type="button" href="#" class="btn  btn-outline-danger btn-light ">VIEW DETAILS</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col h-100">
+                <div class="card h-100 shadow" id="card3">
+                    <img src="https://www.biz4group.com/images/best-coding-practices-for-mean-stack-development.jpg"
+                        class="card-img-top" alt="mean logo" height="100px">
+                    <div class="card-body">
+                        <h5 class="card-title">Mean Stack Development <br>Course</h5>
+                        <div class="col">
+                            <P class="row-3 text-truncate ">
+                                "MEAN Stack Front To Back". In this course we will build an in depth full
+                                stack social network
+                                application using Angular, Express, React, Redux and MongoDB along with ES6+.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text h6"><i>Reviews</i></small> <br>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star-half-alt" style="color:red"></i><b> 4.5(196)</b>
+                    </div>
+                    <div class="content1">
+                        <p><i>Next Batch</i></p>
+                        <h5>In 14 Days-1st DEC </h5>
+                        <p><i>What Will I Learn ?</i></p>
+                        <ul>
+                            <li>
+                                <a href="#">Introduction to Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Understanding Angular Versions</a>
+                            </li>
+                            <li>
+                                <a href="#">Typescript & ES6</a>
+                            </li>
+                            <li>
+                                <a href="#">Power Odd Types</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore Functions</a>
+                            </li>
+                            <li>
+                                <a href="#">Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Interfaces</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Modules,Decorators.
+                                </a>
+                            </li>
+                            <a type="button" href="#" class="btn  btn-outline-danger btn-light ">VIEW DETAILS</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col h-100">
+                <div class="card h-100 shadow" id="card4">
+                    <img src="https://binaryinformatics.com/wp-content/uploads/2019/01/MERN-Stack-Development-and-Consulting-Services.jpg"
+                        class="card-img-top" alt="logo" height="100px">
+                    <div class="card-body">
+                        <h5 class="card-title"> Mern Stack Development <br> Course</h5>
+                        <!-- Block level -->
+                        <div class="col">
+                            <P class="row-3 text-truncate ">
+                                "MERN Stack Front To Back". In this course we will build an in depth full stack social
+                                network application using Node.js, Express, React, Redux and MongoDB along with ES6+. We
+                                will start with a blank text editor and end with a deployed full stack application.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text h6"><i>Reviews</i></small> <br>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star-half-alt fw-bold" style="color:red"></i><b> 4.5(192)</b>
+                    </div>
+                    <div class="content1">
+                        <p><i>Next Batch</i></p>
+                        <h5>In 14 Days-1st DEC </h5>
+                        <p><i>What Will I Learn ?</i></p>
+                        <ul>
+                            <li>
+                                <a href="#">Introduction to Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Understanding Angular Versions</a>
+                            </li>
+                            <li>
+                                <a href="#">Typescript & ES6</a>
+                            </li>
+                            <li>
+                                <a href="#">Power Odd Types</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore Functions</a>
+                            </li>
+                            <li>
+                                <a href="#">Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Interfaces</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Modules,Decorators.
+                                </a>
+                            </li>
+                            <a type="button" href="#" class="btn  btn-outline-danger btn-light ">VIEW DETAILS</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 5 -->
+            <div class="col">
+                <div class="card h-80 shadow" id="card5">
+                    <div class="card-img-top" id="gradient1">
+                        <h5 class="card5h5">WEB <br>DEVELOPMENT <br> COURSE</h5>
+                        <i class="fas fa-globe fa-4x"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h5 class="card-title"> </h5>
+                        <!-- Block level -->
+                        <div class="col">
+                            <P class="row-3 text-truncate ">
+                                We are one of the top web training institutes in Bangalore offering advanced web
+                                development courses to our students. Students will get Trained from Professional Experts
+                                of Web Development Course, who share their experience with you and learn HTML5, CSS3,
+                                JavaScript, Bootstrap Debugging Individual practical and Live project-based Training to
+                                get Hands-on experience in Web Development Course
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text h6"><i>Reviews</i></small> <br>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i> <b>5.0(312)</b>
+                    </div>
+                    <div class="content1">
+                        <p><i>Next Batch</i></p>
+                        <h5>In 14 Days-1st DEC </h5>
+                        <p><i>What Will I Learn ?</i></p>
+                        <ul>
+                            <li>
+                                <a href="#">Introduction to Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Understanding Angular Versions</a>
+                            </li>
+                            <li>
+                                <a href="#">Typescript & ES6</a>
+                            </li>
+                            <li>
+                                <a href="#">Power Odd Types</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore Functions</a>
+                            </li>
+                            <li>
+                                <a href="#">Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Interfaces</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Modules,Decorators.
+                                </a>
+                            </li>
+                            <a type="button" href="#" class="btn  btn-outline-danger btn-light ">VIEW DETAILS</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 6 -->
+            <div class="col">
+                <div class="card h-80 shadow" id="card6">
+                    <div class="card-img-top" id="gradient2">
+                        <h5 class="card5h5">DIGITAL<br>MARKETING <br> COURSE</h5>
+                        <i class="fas fa-poll fa-4x"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h5 class="card-title"> </h5>
+                        <!-- Block level -->
+                        <div class="col">
+                            <P class="row-3 text-truncate ">
+                                The future for digital marketing is promising, and its scope in the upcoming future is
+                                that
+                                it may replace all other standard forms of marketing soon. Benefits such as enhancing
+                                brand
+                                loyalty, reaching out to a wider audience, reducing associated costs, gaining customer
+                                trust
+                                have ensured that it has become a mandatory part of all marketing strategies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text h6"><i>Reviews</i></small> <br>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i> <b>4.8(178)</b>
+                    </div>
+                    <div class="content1">
+                        <p><i>Next Batch</i></p>
+                        <h5>In 14 Days-1st DEC </h5>
+                        <p><i>What Will I Learn ?</i></p>
+                        <ul>
+                            <li>
+                                <a href="#">Introduction to Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Understanding Angular Versions</a>
+                            </li>
+                            <li>
+                                <a href="#">Typescript & ES6</a>
+                            </li>
+                            <li>
+                                <a href="#">Power Odd Types</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore Functions</a>
+                            </li>
+                            <li>
+                                <a href="#">Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Interfaces</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Modules,Decorators.
+                                </a>
+                            </li>
+                            <a type="button" href="#" class="btn  btn-outline-danger btn-light ">VIEW DETAILS</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 7 -->
+            <div class="col">
+                <div class="card h-80 shadow" id="card7">
+                    <div class="card-img-top" id="gradient3">
+                        <h5 class="card5h5">REACT NATIVE <br>DEVELOPMENT <br> COURSE</h5>
+                        <i class="fab fa-react fa-4x"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h5 class="card-title"> </h5>
+                        <!-- Block level -->
+                        <div class="col">
+                            <P class="row-3 text-truncate ">
+                                React Native has created a lot of excitement in the IT industry because of its
+                                cross-platform nature Developers can reuse the code between Android, iOS with minimal
+                                effort. AchieversIT institute brings you the opportunity to master React Native and
+                                embark
+                                on a career that will be the demand of the future.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text h6"><i>Reviews</i></small> <br>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star-half-alt fw-bold" style="color:red"></i><b> 4.6(175)</b>
+                    </div>
+                    <div class="content1">
+                        <p><i>Next Batch</i></p>
+                        <h5>In 14 Days-1st DEC </h5>
+                        <p><i>What Will I Learn ?</i></p>
+                        <ul>
+                            <li>
+                                <a href="#">Introduction to Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Understanding Angular Versions</a>
+                            </li>
+                            <li>
+                                <a href="#">Typescript & ES6</a>
+                            </li>
+                            <li>
+                                <a href="#">Power Odd Types</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore Functions</a>
+                            </li>
+                            <li>
+                                <a href="#">Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Interfaces</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Modules,Decorators.
+                                </a>
+                            </li>
+                            <a type="button" href="#" class="btn  btn-outline-danger btn-light ">VIEW DETAILS</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 8 -->
+            <div class="col">
+                <div class="card h-80 shadow" id="card8">
+                    <div class="card-img-top" id="gradient4">
+                        <h5 class="card5h5">IONIC<br>DEVELOPMENT <br> COURSE</h5>
+                        <i class="fab fa-bity fa-4x"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h5 class="card-title"> </h5>
+                        <!-- Block level -->
+                        <div class="col">
+                            <P class="row-3 text-truncate ">
+                                We are one of the top web training institutes in Bangalore offering advanced web
+                                development courses to our students. Students will get Trained from Professional Experts
+                                of Web Development Course, who share their experience with you and learn HTML5, CSS3,
+                                JavaScript, Bootstrap Debugging Individual practical and Live project-based Training to
+                                get Hands-on experience in Web Development Course
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text h6"><i>Reviews</i></small> <br>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star-half-alt fw-bold" style="color:red"></i><b> 4.6(179)</b>
+                    </div>
+                    <div class="content1">
+                        <p><i>Next Batch</i></p>
+                        <h5>In 14 Days-1st DEC </h5>
+                        <p><i>What Will I Learn ?</i></p>
+                        <ul>
+                            <li>
+                                <a href="#">Introduction to Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Understanding Angular Versions</a>
+                            </li>
+                            <li>
+                                <a href="#">Typescript & ES6</a>
+                            </li>
+                            <li>
+                                <a href="#">Power Odd Types</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore Functions</a>
+                            </li>
+                            <li>
+                                <a href="#">Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Interfaces</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Modules,Decorators.
+                                </a>
+                            </li>
+                            <a type="button" href="#" class="btn  btn-outline-danger btn-light ">VIEW DETAILS</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GRID LAYOUT STOPS HERE -->
+    <!-- TRENDING COURSES GRID CARDS ENDS HERE -->
+
+
+    <!-- GRID LAYOUT STARTS HERE -->
+    <div class="container">
+        <!-- HEADING TAG 2-->
+        <p class="h3 d-flex justify-content-center pt-3">RECENT ADDITIONS</p>
+        <hr>
+        <!-- RECENT ADDITIONS GRID CARDS STARTS HERE -->
+        <div
+            class="row row-cols-xs-1  row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 row-cols-xxl-4 g-5 m-0 mb-5 ">
+            <!-- CARD 9 -->
+            <div class="col">
+                <div class="card h-80 shadow">
+                    <div class="card-img-top" id="gradient5">
+                        <h5 class="card5h5">UI<br>DEVELOPMENT <br> COURSE</h5>
+                        <i class="fab fa-uikit fa-4x"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h5 class="card-title"> </h5>
+                        <!-- Block level -->
+                        <div class="col">
+                            <P class="row-3 text-truncate ">
+                                We are one of the top web training institutes in Bangalore offering advanced web
+                                development courses to our students. Students will get Trained from Professional Experts
+                                of Web Development Course, who share their experience with you and learn HTML5, CSS3,
+                                JavaScript, Bootstrap Debugging Individual practical and Live project-based Training to
+                                get Hands-on experience in Web Development Course
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text h6"><i>Reviews</i></small> <br>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star-half-alt fw-bold" style="color:red"></i><b> 4.6(179)</b>
+                    </div>
+                    <div class="content1">
+                        <p><i>Next Batch</i></p>
+                        <h5>In 14 Days-1st DEC </h5>
+                        <p><i>What Will I Learn ?</i></p>
+                        <ul>
+                            <li>
+                                <a href="#">Introduction to Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Understanding Angular Versions</a>
+                            </li>
+                            <li>
+                                <a href="#">Typescript & ES6</a>
+                            </li>
+                            <li>
+                                <a href="#">Power Odd Types</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore Functions</a>
+                            </li>
+                            <li>
+                                <a href="#">Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Interfaces</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Modules,Decorators.
+                                </a>
+                            </li>
+                            <a type="button" href="#" class="btn  btn-outline-danger btn-light ">VIEW DETAILS</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 10 -->
+            <div class="col">
+                <div class="card h-80 shadow">
+                    <div class="card-img-top" id="gradient6">
+                        <h5 class="card5h5">VUEJS<br>DEVELOPMENT <br> COURSE</h5>
+                        <i class="fab fa-vuejs fa-4x"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h5 class="card-title"> </h5>
+                        <!-- Block level -->
+                        <div class="col">
+                            <P class="row-3 text-truncate ">
+                                We are one of the top web training institutes in Bangalore offering advanced web
+                                development courses to our students. Students will get Trained from Professional Experts
+                                of Web Development Course, who share their experience with you and learn HTML5, CSS3,
+                                JavaScript, Bootstrap Debugging Individual practical and Live project-based Training to
+                                get Hands-on experience in Web Development Course
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text h6"><i>Reviews</i></small> <br>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star-half-alt fw-bold" style="color:red"></i><b> 4.6(179)</b>
+                    </div>
+                    <div class="content1">
+                        <p><i>Next Batch</i></p>
+                        <h5>In 14 Days-1st DEC </h5>
+                        <p><i>What Will I Learn ?</i></p>
+                        <ul>
+                            <li>
+                                <a href="#">Introduction to Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Understanding Angular Versions</a>
+                            </li>
+                            <li>
+                                <a href="#">Typescript & ES6</a>
+                            </li>
+                            <li>
+                                <a href="#">Power Odd Types</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore Functions</a>
+                            </li>
+                            <li>
+                                <a href="#">Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Interfaces</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Modules,Decorators.
+                                </a>
+                            </li>
+                            <a type="button" href="#" class="btn  btn-outline-danger btn-light ">VIEW DETAILS</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 11 -->
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <div class="card-img-top" id="gradient7">
+                        <h5 class="card5h5">WORDPRESS<br>DEVELOPMENT <br> COURSE</h5>
+                        <i class="fab fa-wordpress fa-4x"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h5 class="card-title"> </h5>
+                        <!-- Block level -->
+                        <div class="col">
+                            <P class="row-3 text-truncate ">
+                                We are one of the top web training institutes in Bangalore offering advanced web
+                                development courses to our students. Students will get Trained from Professional Experts
+                                of Web Development Course, who share their experience with you and learn HTML5, CSS3,
+                                JavaScript, Bootstrap Debugging Individual practical and Live project-based Training to
+                                get Hands-on experience in Web Development Course
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text h6"><i>Reviews</i></small> <br>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star-half-alt fw-bold" style="color:red"></i><b> 4.6(179)</b>
+                    </div>
+                    <div class="content1">
+                        <p><i>Next Batch</i></p>
+                        <h5>In 14 Days-1st DEC </h5>
+                        <p><i>What Will I Learn ?</i></p>
+                        <ul>
+                            <li>
+                                <a href="#">Introduction to Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Understanding Angular Versions</a>
+                            </li>
+                            <li>
+                                <a href="#">Typescript & ES6</a>
+                            </li>
+                            <li>
+                                <a href="#">Power Odd Types</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore Functions</a>
+                            </li>
+                            <li>
+                                <a href="#">Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Interfaces</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Modules,Decorators.
+                                </a>
+                            </li>
+                            <a type="button" href="#" class="btn  btn-outline-danger btn-light ">VIEW DETAILS</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 12 -->
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <div class="card-img-top" id="gradient8">
+                        <h5 class="card5h5">PHYTHON<br>DEVELOPMENT <br> COURSE</h5>
+                        <i class="fab fa-python fa-4x"></i>
+                    </div>
+                    <div class=" card-body">
+                        <h5 class="card-title"> </h5>
+                        <!-- Block level -->
+                        <div class="col">
+                            <P class="row-3 text-truncate ">
+                                We are one of the top web training institutes in Bangalore offering advanced web
+                                development courses to our students. Students will get Trained from Professional Experts
+                                of Web Development Course, who share their experience with you and learn HTML5, CSS3,
+                                JavaScript, Bootstrap Debugging Individual practical and Live project-based Training to
+                                get Hands-on experience in Web Development Course
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text h6"><i>Reviews</i></small> <br>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star" style="color:red"></i>
+                        <i class="fas fa-star-half-alt fw-bold" style="color:red"></i><b> 4.6(179)</b>
+                    </div>
+                    <div class="content1">
+                        <p><i>Next Batch</i></p>
+                        <h5>In 14 Days-1st DEC </h5>
+                        <p><i>What Will I Learn ?</i></p>
+                        <ul>
+                            <li>
+                                <a href="#">Introduction to Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Understanding Angular Versions</a>
+                            </li>
+                            <li>
+                                <a href="#">Typescript & ES6</a>
+                            </li>
+                            <li>
+                                <a href="#">Power Odd Types</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore Functions</a>
+                            </li>
+                            <li>
+                                <a href="#">Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Interfaces</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Modules,Decorators.
+                                </a>
+                            </li>
+                            <a type="button" href="#" class="btn  btn-outline-danger btn-light ">VIEW DETAILS</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARDS SECTION-2 WITH ICONS STARTS FROM HERE -->
+    <div class="container  my-5 p-5" id="icon-cards">
+
+        <!-- HEADING TAG 3 -->
+        <p class="h3 d-flex justify-content-center" id="discover-h3">DISCOVER TOP CATEGORIES</p>
+        <hr>
+
+        <!-- GRID LAYOUT FOR CARDS -->
+        <div class=" row  g-5 mt-3">
+
+            <!--CARD-ICON-1 -->
+            <div class="  col-12   col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                <div class="card  pt-4 pb-4 shadow">
+                    <i class="fab fa-dev fa-3x d-flex justify-content-center" style="color:coral"></i>
+                    <p class="card-text text-center pt-2 "><small><strong>DevOps</strong></small></p>
+                </div>
+            </div>
+            <!--CARD-ICON-2  -->
+            <div class="  col-12  col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                <div class="card  pt-4 pb-4 shadow">
+                    <i class="fas fa-laptop-code fa-3x  d-flex justify-content-center"
+                        style="color:rgb(182, 121, 182)"></i>
+                    <p class="card-text text-center pt-2"><small><strong>Front-End</strong></small></p>
+                </div>
+            </div>
+            <!--CARD-ICON-3  -->
+            <div class="  col-12  col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                <div class="card  pt-4 pb-4 shadow">
+                    <i class="fas fa-database fa-3x d-flex justify-content-center" style="color:lightslategrey"></i>
+                    <p class="card-text text-center pt-3 lh-1"><small><strong>Data Types</strong></small></p>
+                </div>
+            </div>
+            <!--CARD-ICON-4  -->
+            <div class="  col-12  col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                <div class="card shadow pt-4 pb-4">
+                    <i class="fas fa-funnel-dollar fa-3x d-flex justify-content-center" style="color:mediumpurple"></i>
+                    <p class="card-text text-center pt-3 lh-1"><small><strong>Digital Marketing</strong></small></p>
+                </div>
+            </div>
+            <!--CARD-ICON-5  -->
+            <div class="  col-12  col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                <div class="card pt-4 pb-4 shadow">
+                    <i class="far fa-file-code fa-3x d-flex justify-content-center" style="color:orange"></i>
+                    <p class="card-text text-center lh-1 pt-3 "><small><strong>Program & FrameWorks</strong></small></p>
+                </div>
+            </div>
+            <!--CARD-ICON-6 -->
+            <div class="  col-12  col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                <div class="card shadow pt-4 pb-4">
+                    <i class="fas fa-mobile-alt fa-3x d-flex justify-content-center" style="color:aqua;"></i>
+                    <p class="card-text text-center pt-3 lh-1"><small><strong>Mobile App Dev</strong></small></p>
+                </div>
+            </div>
+            <!--CARD-ICON-7  -->
+            <div class="  col-12  col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                <div class="card  pt-4 pb-4 shadow">
+                    <i class="fas fa-chalkboard-teacher fa-3x d-flex justify-content-center"
+                        style="color:rgb(144, 201, 144)"></i>
+                    <p class="card-text text-center  pt-3 lh-1"><small> <strong>Software Testing</strong></small>
+                    </p>
+                </div>
+            </div>
+            <!--CARD-ICON-8  -->
+            <div class="  col-12  col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                <div class="card pt-4 pb-4 shadow">
+                    <i class="fab fa-jsfiddle fa-3x d-flex justify-content-center" style="color:red"></i>
+                    <p class="card-text text-center  pt-3 lh-1"><small><strong>Cloud Computing</strong></small></p>
+                </div>
+            </div>
+            <!--CARD-ICON-9 -->
+            <div class="  col-12  col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                <div class="card  pt-4 pb-4 shadow">
+                    <i class="fas fa-mask fa-3x d-flex justify-content-center" style="color:powderblue"></i>
+                    <p class="card-text text-center pt-3 lh-1"><small><strong>Cyber Security</strong></small></p>
+                </div>
+            </div>
+            <!--CARD-ICON-10 -->
+            <div class="  col-12  col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                <div class="card  pt-4 pb-4 shadow">
+                    <i class="fas fa-mobile-alt fa-3x d-flex justify-content-center" style="color:brown"></i>
+                    <p class="card-text text-center  pt-3 lh-1 "><small><strong>Artificial Intelligence</strong></small>
+                    </p>
+                </div>
+            </div>
+            <!--CARD-ICON-11 -->
+            <div class="  col-12  col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                <div class="card  pt-4 pb-4 shadow ">
+                    <i class="fab fa-python fa-3x d-flex justify-content-center" style="color:cadetblue"></i>
+                    <p class="card-text text-center pt-2"><small><strong>Phyton</strong></small></p>
+                </div>
+            </div>
+            <!--CARD-ICON-12  -->
+            <div class="  col-12  col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                <div class="card  pt-4 pb-4 shadow">
+                    <i class="fab fa-codepen fa-3x d-flex justify-content-center" style="color:darkblue"></i>
+                    <p class="card-text text-center pt-2"><small><strong>Big Data</strong> </small></p>
+                </div>
+            </div>
+        </div>
+        <!-- GRID LAYOUT ENDS HERE -->
+    </div>
+    <!-- CARDS SECTION-2 WITH ICONS ENDS HERE -->
+
+    <!-- REVIEW CARDS SECTION STARTS HERE -->
+    <div class="container">
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <!-- HEADING TAG -->
+            <p class="h3 d-flex justify-content-center mt-0 pt-0">REVIEWS</p>
+            <hr>
+            <div class="carousel-inner ">
+                <!-- SLIDE CARDS OF REVIEWS STARTS FROM HERE -->
+
+                <!-- SLIDE 1  STARTS-->
+                <div class="carousel-item active">
+                    <div
+                        class="row  row-cols-xs-1  row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 g-5 m-1 mb-5 ">
+
+                        <!-- CARD 1 -->
+                        <div class="col h-100 ">
+                            <div class="card h-100 w-100 shadow">
+                                <div class="card-img-top" id="gradient9">
+                                    <h1 class="cardh1">S</h1>
+                                    <h3 class="cardh3">Sadhik</h3>
+                                </div>
+                                <div class=" card-body">
+                                    <h6 class="card-title">Angular Certification Training </h6>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <P class="pt-4">
+                                        We are one of the top web training institutes in Bangalore offering advanced
+                                        web
+                                        development courses to our students.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="col h-100  ">
+                            <div class="card h-100 w-100 shadow">
+                                <div class="card-img-top" id="gradient10">
+                                    <h1 class="cardh1">A</h1>
+                                    <h3 class="cardh3">Ashiq</h3>
+                                </div>
+                                <div class=" card-body">
+                                    <h6 class="card-title">Digital Marketing Certification Training </h6>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <P class="pt-4">
+                                        We are one of the top web training institutes in Bangalore offering advanced
+                                        web
+                                        development courses to our students.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD3 -->
+                        <div class="col h-100 ">
+                            <div class="card  h-100 w-100 shadow">
+                                <div class="card-img-top " id="gradient11">
+                                    <h1 class="cardh1">B</h1>
+                                    <h3 class="cardh3">Basha</h3>
+                                </div>
+                                <div class=" card-body">
+                                    <h6 class="card-title">React JS Certification Training </h6>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <P class="pt-4">
+                                        We are one of the top web training institutes in Bangalore offering advanced
+                                        web
+                                        development courses to our students.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD 3 ENDS HERE -->
+                    </div>
+                </div>
+                <!-- SLIDE1 ENDS HERE -->
+
+                <!--SLIDE 2 STARTS   -->
+                <div class="carousel-item">
+                    <div
+                        class="row row-cols-xs-1  row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 g-5 m-1 mb-5">
+                        <!-- CARD 1 -->
+                        <div class=" col h-100 ">
+                            <div class=" card h-100 w-100 shadow">
+                                <div class="card-img-top" id="gradient12">
+                                    <h1 class="cardh1">R</h1>
+                                    <h3 class="cardh3">Roshini</h3>
+                                </div>
+                                <div class=" card-body">
+                                    <h6 class="card-title">UI & Full Stack Certification Training </h6>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <P class="pt-4">
+                                        We are one of the top web training institutes in Bangalore offering advanced
+                                        web
+                                        development courses to our students.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD 2 -->
+                        <div class="col h-100">
+                            <div class="card  h-100 w-100 shadow">
+                                <div class="card-img-top" id="gradient13">
+                                    <h1 class="cardh1">B</h1>
+                                    <h3 class="cardh3">Babu Khan</h3>
+                                </div>
+                                <div class=" card-body">
+                                    <h6 class="card-title">Angular Certification Training </h6>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <P class="pt-4">
+                                        We are one of the top web training institutes in Bangalore offering advanced
+                                        web
+                                        development courses to our students.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD3 -->
+                        <div class="col h-100">
+                            <div class="card  h-100 w-100 shadow">
+                                <div class="card-img-top" id="gradient14">
+                                    <h1 class="cardh1">S</h1>
+                                    <h3 class="cardh3">Sheema</h3>
+                                </div>
+                                <div class=" card-body">
+                                    <h6 class="card-title">UI Development Certification Training </h6>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <P class="pt-4">
+                                        We are one of the top web training institutes in Bangalore offering advanced
+                                        web
+                                        development courses to our students.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD 3 ENDS HERE -->
+                    </div>
+                </div>
+                <!-- SLIDE 2 ENDS HERE -->
+
+                <!-- SLIDE 3 STARTS HERE -->
+
+                <div class="carousel-item">
+                    <div
+                        class="row  row-cols-xs-1  row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 g-5 m-1 mb-5">
+
+                        <!-- CARD 1 -->
+                        <div class="col h-100 ">
+                            <div class="card h-100 w-100 shadow">
+                                <div class="card-img-top" id="gradient15">
+                                    <h1 class="cardh1">P</h1>
+                                    <h3 class="cardh3">Pattan Anisha</h3>
+                                </div>
+                                <div class=" card-body">
+                                    <h6 class="card-title">Iconic Certification Training </h6>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <P class="pt-4">
+                                        We are one of the top web training institutes in Bangalore offering advanced
+                                        web
+                                        development courses to our students.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD 2 -->
+                        <div class="col h-100 ">
+                            <div class="card h-100 w-100 shadow">
+                                <div class="card-img-top" id="gradient16">
+                                    <h1 class="cardh1">K</h1>
+                                    <h3 class="cardh3">Khushi</h3>
+                                </div>
+                                <div class=" card-body">
+                                    <h6 class="card-title">UI & React JS Certification Training </h6>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <P class="pt-4">
+                                        We are one of the top web training institutes in Bangalore offering advanced
+                                        web
+                                        development courses to our students.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD3 -->
+                        <div class="col h-100 ">
+                            <div class="card h-100 w-100 shadow">
+                                <div class="card-img-top" id="gradient17">
+                                    <h1 class="cardh1">Z</h1>
+                                    <h3 class="cardh3">Zareen</h3>
+                                </div>
+                                <div class=" card-body">
+                                    <h6 class="card-title">Angular & Iconic Certification Training </h6>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <i class="fas fa-star" style="color:red"></i>
+                                    <P class="pt-4">
+                                        We are one of the top web training institutes in Bangalore offering advanced
+                                        web
+                                        development courses to our students.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD 3 ENDS HERE -->
+                    </div>
+                </div>
+                <!-- SLIDE 3 ENDS HERE -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE CARDS OF REVIEWS ENDS HERE -->
+
+    <!--ANCHOR TAG BUTTON  -->
+    <div class="btn-group dropend  d-flex justify-content-center m-2 ">
+        <a class=" dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false" href="#">
+            View All Reviews
+        </a>
+    </div>
+    <!-- REVIEW CARDS SECTION ENDS HERE -->
+
+
+    <!-- section-8 footer -->
+
+
+    <div class="footer">
+
+        <div class="sub_footer1">
+
+            <div style="flex:4">
+
+                <img src="https://www.achieversit.com/assets/images/logo-white.png" alt="logo" height="70px">
+
+            </div>
+
+            <div class="footerul1" style="flex:3">
+                <ul>
+                    <li style="flex:1">
+                        <a href="#">Shop</a>
+                    </li>
+
+                    <li style="flex:1">
+                        <a href="#">Blog</a>
+                    </li>
+
+                    <li style="flex:2">
+                        <a href="screens\achiver_sheema_contactpage.html" target="_blank">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="footerul2" style="flex:2">
+                <ul>
+                    <li>
+                        <a href="#">Order Status</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Shipping and Delivery</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerul3 " style="flex:3">
+                <ul>
+                    <li>
+                        <a href="#">Payment Options</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Guides</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="sub_footer2">
+
+            <h6>SUBSCRIBE</h6>
+
+            <div class="sub_footer3">
+
+                <div class="search_email" style="flex:7">
+
+                    <input type="text" placeholder="Your email here" name="email" size="50px">
+
+                    <button>&#8594;</button>
+
+                </div>
+
+                <div class="footer_icons" style="flex:5">
+
+                    <ul>
+                        <li style="flex:1">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+
+                        <li style="flex:1">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+
+                        <li style="flex:1">
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        </li>
+
+                        <li style="flex:1">
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+
+                        <li style="flex:4">
+                            <a href="#"><i class="fab fa-youtube-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p>Copyright &copy;2021 All rights reserved|</p>
+
+        <i class="far fa-heart"></i>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
